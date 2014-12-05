@@ -1,4 +1,7 @@
 'CLASSIC SOLITAIRE by Elod P Csirmaz 2004
+'todo: more undo/redo
+'todo: AUTOPLAY:TOBB LEHETOSEG/TOBB HELYRE?
+'todo: AUTOPLAY: out series, insert to empty
 
 'Unused subrutines:
 '  loadtable - load a table from solitin.txt
@@ -590,8 +593,8 @@ IF a$ = "s" THEN showcards = 1 - showcards
 IF a$ = "m" THEN GOSUB markgame
 IF a$ = "u" THEN GOSUB undo
 IF mb > 0 THEN
-  mx = mx / 8 + 1
-  my = my / 8 + 1
+  mx = INT(mx / 8) + 1
+  my = INT(my / 8) + 1
 IF mx < 29 AND my > 1 THEN '..........................TABLA
   oszlop = INT((mx - 1) / 4) + 1
   belul = (mx MOD 4)
