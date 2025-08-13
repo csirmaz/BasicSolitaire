@@ -3,6 +3,8 @@ BasicSolitaire
 
 Classic Solitaire with autoplay written a long time ago in QBasic
 
+![screenshot](https://www.postminart.com/cdn/solit.gif)
+
 I uploaded this old project as it contains an algorithm to play classic solitaire
 that might be interesting, although the code is a bit messy.
 
